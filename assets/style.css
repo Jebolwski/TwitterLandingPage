@@ -1,0 +1,130 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.left {
+  width: fit-content;
+  position: sticky;
+  top: 0;
+  left: 0;
+  padding-left: 56px;
+  padding-right: 20px;
+  border-right: 1px solid gray;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 100vh;
+}
+
+.left .d-flex .ms-3 {
+  color: white;
+  font-weight: 400;
+}
+
+.left .tweet {
+  min-width: 140px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  background-color: #1d9bf0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 999999px;
+}
+
+.tweet-small {
+  background-color: #1d9bf0;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.profile-pic img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.center {
+  border-top: 1px solid gray;
+  border-bottom: 1px solid gray;
+  border-right: 1px solid gray;
+}
+
+.tweet-now {
+  position: relative;
+  top: 0;
+}
+
+.tweet-top {
+  position: sticky;
+  background-color: rgba(0, 0, 0, 0.88);
+  border: 0;
+  color: white;
+  top: 0;
+  left: 0;
+  z-index: 111;
+}
+
+.middle-tweet {
+  background-color: #1d9bf0;
+  border-radius: 99999px;
+  padding: 4px 10px;
+}
+
+.tweet-now .d-flex {
+  color: white;
+}
+
+.tweet-body {
+  padding: 10px;
+}
+
+.tweet-body img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.tweet-body .text-input {
+  background-color: black;
+  outline: 0;
+  color: white;
+  border: 0;
+  font-size: 20px;
+}
+.tweet-body .text-input::placeholder {
+  color: rgb(180, 180, 180);
+}
+
+.left-small {
+  padding-left: 40px;
+  padding-right: 20px;
+  border-right: 1px solid gray;
+  height: 100vh;
+  width: fit-content;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.messi-div {
+  height: 14vh;
+  border-top: 1px solid gray;
+}
+
+@media only screen and (max-width: 1280px) {
+  .left {
+    display: none;
+  }
+  .left-small {
+    display: flex;
+  }
+}
