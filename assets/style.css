@@ -1,7 +1,125 @@
-* {
-  padding: 0;
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
   margin: 0;
-  box-sizing: border-box;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
 }
 
 .left {
@@ -104,20 +222,61 @@
 }
 
 .left-small {
-  padding-left: 40px;
-  padding-right: 20px;
+  padding-left: 13px;
+  padding-right: 13px;
   border-right: 1px solid gray;
   height: 100vh;
   width: fit-content;
+  position: sticky;
+  top: 0;
+  left: 0;
   display: none;
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
 }
 
-.messi-div {
-  height: 14vh;
+.tweet-div {
+  color: white;
+  position: relative;
   border-top: 1px solid gray;
+  border-bottom: 1px solid gray;
+}
+
+.tweet-div .profile-pic {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+}
+
+.tweet-div .tweet-image {
+  width: 506px;
+  border-radius: 14px;
+}
+
+.messi-div {
+  border-top: 1px solid gray;
+}
+
+.search-parent {
+  padding: 5px 20px;
+  position: sticky;
+  top: 0;
+  right: 0;
+}
+
+.search {
+  position: relative;
+}
+
+.right input {
+  outline: 0;
+  border: 0;
+  color: #e7e9ea;
+  background-color: #202327;
+  border-radius: 99999px;
+  padding: 13px;
+  padding-left: 38px;
 }
 
 @media only screen and (max-width: 1280px) {
@@ -126,5 +285,23 @@
   }
   .left-small {
     display: flex;
+  }
+}
+
+@media only screen and (max-width: 1020px) {
+  .right {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 705px) {
+  .tweet-div .tweet-image {
+    width: 65vw;
+  }
+  .text-eplisis {
+    white-space: nowrap;
+    width: 60px;
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
 }
