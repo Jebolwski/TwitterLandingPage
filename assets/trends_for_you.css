@@ -1,0 +1,33 @@
+.trends-for-you__header {
+  padding: 14px;
+}
+
+.trends-for-you__div {
+  padding: 12px 16px;
+  display: flex;
+  justify-content: space-between;
+  transition: 0.2s;
+}
+
+.trends-for-you__div:hover {
+  background-color: rgba(255, 255, 255, 0.03);
+  transition: 0.2s;
+}
+
+.trends-for-you__div-left-tweet-count {
+  margin-top: 6px;
+  color: rgb(113, 118, 123);
+  font-size: 14px;
+}
+
+.trends-for-you__div-left-header-title {
+  color: white;
+  margin-top: 6px;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.trends-for-you__div-left-title {
+  font-size: 14px;
+  color: rgb(113, 118, 123);
+}
